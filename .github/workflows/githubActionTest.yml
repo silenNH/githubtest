@@ -2,7 +2,12 @@ name: Deploy to aws
 on: 
   push:
     branches:   
+      - prod
       - dev
+  pull_request:
+    branches: 
+      - prod
+  
   
 jobs:
   automated_test:
@@ -11,7 +16,7 @@ jobs:
       - name: Testscript
         run: |
           echo "Testscripts need to be defined and applied here"
-          #echo Pullrequest
-          #echo github.event.pull_request
-          #echo branche:
-          #echo github.ref
+          echo Pullrequest
+          echo ${{ github.event.pull_request }}
+          echo branche:
+          echo ${{ github.ref }}
