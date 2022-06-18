@@ -13,6 +13,6 @@ jobs:
         run: |
           echo "Testscripts need to be defined and applied here"
           echo Pullrequest
-          github.event.pull_request
+          echo ${{ github.event.pull_request }}
           echo branche:
-          github.ref
+          echo ${{ github.ref }}
