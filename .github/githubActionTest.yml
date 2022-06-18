@@ -2,7 +2,6 @@ name: Deploy to aws
 on: 
   push:
     branches:   
-      - prod
       - dev
   
 jobs:
