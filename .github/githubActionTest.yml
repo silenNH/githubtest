@@ -4,14 +4,15 @@ on:
     branches:   
       - prod
       - dev
-
+  
 jobs:
-  state_event_type:
+  automated_test:
     runs-on: ubuntu-latest
     steps:
-    - name: if_pr
-      run: |
-        echo Pullrequest
-        echo github.event.pull_request
-        echo branche:
-        echo github.ref
+      - name: Testscript
+        run: |
+          echo "Testscripts need to be defined and applied here"
+          #echo Pullrequest
+          #echo github.event.pull_request
+          #echo branche:
+          #echo github.ref
