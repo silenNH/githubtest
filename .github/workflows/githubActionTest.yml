@@ -2,7 +2,10 @@ name: Deploy to aws
 on: 
   push:
     branches:   
+      - prod
       - dev
+    pull_request:
+      branches: prod
   
   
 jobs:
