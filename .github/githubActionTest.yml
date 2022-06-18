@@ -1,7 +1,7 @@
-on:
-  #pull_request:
+name: Deploy to aws
+on: 
   push:
-    branches:    
+    branches:   
       - prod
       - dev
 
@@ -9,7 +9,6 @@ jobs:
   state_event_type:
     runs-on: ubuntu-latest
     steps:
-
     - name: if_pr
       run: |
         echo Pullrequest
