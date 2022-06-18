@@ -26,6 +26,7 @@ jobs:
 
 
   test_prod_env:
+    if: ${{ github.ref == 'refs/heads/prod' }}
     runs-on: ubuntu-latest
     environment: prod
     steps:
