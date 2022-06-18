@@ -1,0 +1,17 @@
+name: Deploy to aws
+on: 
+  push:
+    branches:   
+      - dev
+  
+jobs:
+  automated_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testscript
+        run: |
+          echo "Testscripts need to be defined and applied here"
+          #echo Pullrequest
+          #echo github.event.pull_request
+          #echo branche:
+          #echo github.ref
