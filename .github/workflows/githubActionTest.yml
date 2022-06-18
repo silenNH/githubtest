@@ -5,7 +5,8 @@ on:
       - prod
       - dev
   pull_request:
-    branches: prod
+    branches: 
+      - prod
   
   
 jobs:
