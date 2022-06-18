@@ -4,8 +4,8 @@ on:
     branches:   
       - prod
       - dev
-    pull_request:
-      branches: prod
+  pull_request:
+    branches: prod
   
   
 jobs:
