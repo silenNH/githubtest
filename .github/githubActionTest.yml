@@ -1,0 +1,17 @@
+on:
+  pull_request:
+    branches:    
+      - main
+      - dev
+
+jobs:
+  state_event_type:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: if_pr
+      run: |
+        echo Pullrequest
+        echo github.event.pull_request
+        echo branche:
+        echo github.ref
