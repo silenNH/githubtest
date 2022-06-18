@@ -12,7 +12,7 @@ jobs:
       - name: Testscript
         run: |
           echo "Testscripts need to be defined and applied here"
-          #echo Pullrequest
-          #echo github.event.pull_request
-          #echo branche:
-          #echo github.ref
+          echo Pullrequest
+          echo github.event.pull_request
+          echo branche:
+          echo github.ref
